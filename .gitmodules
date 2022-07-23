@@ -1,0 +1,3 @@
+[submodule "Amoeba/vendor/spdlog"]
+	path = Amoeba/vendor/spdlog
+	url = https://github.com/gabime/spdlog
