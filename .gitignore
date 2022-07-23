@@ -1,7 +1,18 @@
-# Directories
-.vs/
-bin/
+# Binaries
+**/bin/
 bin-int/
 
-# Files
-*.user
+# Amoeba files
+*.log
+
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+# Directories
+Amoeba/vendor/VulkanSDK
+Amoeba/assets/cache
+scripts/__pycache__

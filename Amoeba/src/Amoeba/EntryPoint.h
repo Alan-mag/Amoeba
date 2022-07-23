@@ -5,7 +5,8 @@
 extern Amoeba::Application* Amoeba::CreateApplication();
 
 int main(int argc, char** argv) {
-	printf("Amoeba Engine\n");
+	Amoeba::Log::Init();
+	AMOEBA_CORE_INFO("Amoeba Engine\n");
 	auto app = Amoeba::CreateApplication();
 	app->Run();
 	delete app;
