@@ -4,6 +4,9 @@
     <Filter Include="Amoeba">
       <UniqueIdentifier>{4A5D71A7-36FF-9B7D-1FBA-AFD10BFB22CE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Amoeba\Events">
+      <UniqueIdentifier>{EEF123BF-5AB2-9FF5-23ED-E8728F6CE4D1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Amoeba.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Amoeba\EntryPoint.h">
       <Filter>Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h">
+      <Filter>Amoeba\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Events\Event.h">
+      <Filter>Amoeba\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Events\KeyEvent.h">
+      <Filter>Amoeba\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Events\MouseEvent.h">
+      <Filter>Amoeba\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Log.h">
       <Filter>Amoeba</Filter>
