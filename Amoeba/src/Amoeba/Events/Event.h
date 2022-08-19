@@ -1,5 +1,6 @@
 #pragma once
 
+#include "amoebapch.h"
 #include "Amoeba/Core.h"
 
 namespace Amoeba {
