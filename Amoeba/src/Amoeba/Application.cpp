@@ -1,3 +1,4 @@
+#include "amoebapch.h"
 #include "Application.h"
 
 #include "Amoeba/Events/ApplicationEvent.h"
