@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Amoeba {
 
 	class AMOEBA_API MouseMovedEvent : public Event

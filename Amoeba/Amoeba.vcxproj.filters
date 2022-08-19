@@ -34,6 +34,7 @@
     <ClInclude Include="src\Amoeba\Log.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
+    <ClInclude Include="src\amoebapch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Amoeba\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Amoeba\Log.cpp">
       <Filter>Amoeba</Filter>
     </ClCompile>
+    <ClCompile Include="src\amoebapch.cpp" />
   </ItemGroup>
 </Project>
