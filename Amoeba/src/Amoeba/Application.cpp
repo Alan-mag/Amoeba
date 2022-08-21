@@ -4,27 +4,28 @@
 #include "Amoeba/Events/ApplicationEvent.h"
 #include "Amoeba/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Amoeba {
 
-	Application::Application() {
+	Application::Application() 
+	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
+
+	Application::~Application() 
+	{
 
 	}
 
-	Application::~Application() {
-
-	}
-
-	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+	void Application::Run() 
+	{
+		while (m_Running)
 		{
-			AMOEBA_TRACE(e);
+			glClearColor(0, 1, 1, 0);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			AMOEBA_TRACE(e);
-		}
-		while (true);
 	}
 
 }

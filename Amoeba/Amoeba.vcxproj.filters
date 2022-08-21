@@ -7,6 +7,9 @@
     <Filter Include="Amoeba\Events">
       <UniqueIdentifier>{EEF123BF-5AB2-9FF5-23ED-E8728F6CE4D1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Amoeba.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\Amoeba\Log.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Window.h">
+      <Filter>Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\amoebapch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\Amoeba\Log.cpp">
       <Filter>Amoeba</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\amoebapch.cpp" />
   </ItemGroup>
