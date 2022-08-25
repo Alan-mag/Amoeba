@@ -34,6 +34,12 @@
     <ClInclude Include="src\Amoeba\Events\MouseEvent.h">
       <Filter>Amoeba\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Layer.h">
+      <Filter>Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\LayerStack.h">
+      <Filter>Amoeba</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Log.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
@@ -47,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Amoeba\Application.cpp">
+      <Filter>Amoeba</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Layer.cpp">
+      <Filter>Amoeba</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\LayerStack.cpp">
       <Filter>Amoeba</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\Log.cpp">

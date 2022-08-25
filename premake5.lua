@@ -64,16 +64,19 @@ project "Amoeba"
         }
 
     filter "configurations:Debug"
-        defines "AMOEBA_DEBUG"
-        symbols "On"
+		defines "AMOEBA_DEBUG"
+		buildoptions "/MDd"
+		symbols "On"
 
-    filter "configurations:Release"
-        defines "AMOEBA_RELEASE"
-        optimize "On"
+	filter "configurations:Release"
+		defines "AMOEBA_RELEASE"
+		buildoptions "/MD"
+		optimize "On"
 
-    filter "configurations:Dist"
-        defines "AMOEBA_DIST"
-        optimize "On"
+	filter "configurations:Dist"
+		defines "AMOEBA_DIST"
+		buildoptions "/MD"
+		optimize "On"
 
 project "Sandbox"
     location "Sandbox"
@@ -112,12 +115,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "AMOEBA_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "AMOEBA_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "AMOEBA_DIST"
+        buildoptions "/MD"
         optimize "On"
