@@ -13,8 +13,10 @@ workspace "Amoeba"
     -- Include directories relative to root folder (solution directory)
     IncludeDir = {}
     IncludeDir["GLFW"] = "Amoeba/vendor/GLFW/include"
+    IncludeDir["Glad"] = "Amoeba/vendor/Glad/include"
 
     include "Amoeba/vendor/GLFW"
+    include "Amoeba/vendor/Glad"
 
 
 project "Amoeba"
@@ -38,12 +40,14 @@ project "Amoeba"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+        "Glad",
 		"opengl32.lib"
     }
 
