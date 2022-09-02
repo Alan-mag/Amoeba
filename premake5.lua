@@ -59,7 +59,8 @@ project "Amoeba"
         defines 
         {
             "AMOEBA_PLATFORM_WINDOWS",
-            "AMOEBA_BUILD_DLL"
+            "AMOEBA_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
