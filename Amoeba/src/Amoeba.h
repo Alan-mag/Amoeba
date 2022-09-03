@@ -6,6 +6,8 @@
 #include "Amoeba/Layer.h"
 #include "Amoeba/Log.h"
 
+#include "Amoeba/ImGui/ImGuiLayer.h"
+
 #include <stdio.h>
 // ---Entry Point--------------------
 #include "Amoeba/EntryPoint.h"

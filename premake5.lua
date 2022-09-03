@@ -14,9 +14,11 @@ workspace "Amoeba"
     IncludeDir = {}
     IncludeDir["GLFW"] = "Amoeba/vendor/GLFW/include"
     IncludeDir["Glad"] = "Amoeba/vendor/Glad/include"
+    IncludeDir["ImGui"] = "Amoeba/vendor/imgui"
 
     include "Amoeba/vendor/GLFW"
     include "Amoeba/vendor/Glad"
+    include "Amoeba/vendor/imgui"
 
 
 project "Amoeba"
@@ -41,13 +43,15 @@ project "Amoeba"
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-        "%{IncludeDir.Glad}"
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
 	}
 
 	links 
 	{ 
 		"GLFW",
         "Glad",
+        "ImGui",
 		"opengl32.lib"
     }
 

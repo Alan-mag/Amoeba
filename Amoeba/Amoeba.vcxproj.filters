@@ -7,8 +7,14 @@
     <Filter Include="Amoeba\Events">
       <UniqueIdentifier>{EEF123BF-5AB2-9FF5-23ED-E8728F6CE4D1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Amoeba\ImGui">
+      <UniqueIdentifier>{F421A153-E084-30F8-890A-69AE754CFC7A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +40,9 @@
     <ClInclude Include="src\Amoeba\Events\MouseEvent.h">
       <Filter>Amoeba\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\ImGui\ImGuiLayer.h">
+      <Filter>Amoeba\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Layer.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
@@ -46,6 +55,12 @@
     <ClInclude Include="src\Amoeba\Window.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\WindowsWindow.h">
       <Filter>Platform</Filter>
     </ClInclude>
@@ -55,6 +70,9 @@
     <ClCompile Include="src\Amoeba\Application.cpp">
       <Filter>Amoeba</Filter>
     </ClCompile>
+    <ClCompile Include="src\Amoeba\ImGui\ImGuiLayer.cpp">
+      <Filter>Amoeba\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Amoeba\Layer.cpp">
       <Filter>Amoeba</Filter>
     </ClCompile>
@@ -63,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\Amoeba\Log.cpp">
       <Filter>Amoeba</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\WindowsWindow.cpp">
       <Filter>Platform</Filter>

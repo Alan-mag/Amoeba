@@ -26,6 +26,7 @@ class Sandbox : public Amoeba::Application {
 		Sandbox() 
 		{
 			PushLayer(new ExampleLayer());
+			PushOverlay(new Amoeba::ImGuiLayer());
 		}
 
 		~Sandbox() 
