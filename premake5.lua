@@ -5,7 +5,7 @@ workspace "Amoeba"
     configurations
     {
         "Debug",
-        "Release",
+        "Release", 
         "Dist"
     }
 
@@ -19,6 +19,8 @@ workspace "Amoeba"
     include "Amoeba/vendor/GLFW"
     include "Amoeba/vendor/Glad"
     include "Amoeba/vendor/imgui"
+
+    -- startproject "Sandbox" todo: added in repo, but printing error onbuild?
 
 
 project "Amoeba"
