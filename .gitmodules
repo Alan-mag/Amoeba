@@ -4,3 +4,6 @@
 [submodule "Amoeba/vendor/GLFW"]
 	path = Amoeba/vendor/GLFW
 	url = https://github.com/Alan-mag/glfw.git
+[submodule "Amoeba/vendor/imgui"]
+	path = Amoeba/vendor/imgui
+	url = https://github.com/Alan-mag/imgui.git

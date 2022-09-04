@@ -5,7 +5,7 @@ workspace "Amoeba"
     configurations
     {
         "Debug",
-        "Release",
+        "Release", 
         "Dist"
     }
 
@@ -13,8 +13,14 @@ workspace "Amoeba"
     -- Include directories relative to root folder (solution directory)
     IncludeDir = {}
     IncludeDir["GLFW"] = "Amoeba/vendor/GLFW/include"
+    IncludeDir["Glad"] = "Amoeba/vendor/Glad/include"
+    IncludeDir["ImGui"] = "Amoeba/vendor/imgui"
 
     include "Amoeba/vendor/GLFW"
+    include "Amoeba/vendor/Glad"
+    include "Amoeba/vendor/imgui"
+
+    -- startproject "Sandbox" todo: added in repo, but printing error onbuild?
 
 
 project "Amoeba"
@@ -38,12 +44,16 @@ project "Amoeba"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+        "Glad",
+        "ImGui",
 		"opengl32.lib"
     }
 
@@ -55,7 +65,8 @@ project "Amoeba"
         defines 
         {
             "AMOEBA_PLATFORM_WINDOWS",
-            "AMOEBA_BUILD_DLL"
+            "AMOEBA_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
@@ -64,16 +75,19 @@ project "Amoeba"
         }
 
     filter "configurations:Debug"
-        defines "AMOEBA_DEBUG"
-        symbols "On"
+		defines "AMOEBA_DEBUG"
+		buildoptions "/MDd"
+		symbols "On"
 
-    filter "configurations:Release"
-        defines "AMOEBA_RELEASE"
-        optimize "On"
+	filter "configurations:Release"
+		defines "AMOEBA_RELEASE"
+		buildoptions "/MD"
+		optimize "On"
 
-    filter "configurations:Dist"
-        defines "AMOEBA_DIST"
-        optimize "On"
+	filter "configurations:Dist"
+		defines "AMOEBA_DIST"
+		buildoptions "/MD"
+		optimize "On"
 
 project "Sandbox"
     location "Sandbox"
@@ -112,12 +126,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "AMOEBA_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "AMOEBA_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "AMOEBA_DIST"
+        buildoptions "/MD"
         optimize "On"
