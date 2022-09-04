@@ -15,6 +15,7 @@ workspace "Amoeba"
     IncludeDir["GLFW"] = "Amoeba/vendor/GLFW/include"
     IncludeDir["Glad"] = "Amoeba/vendor/Glad/include"
     IncludeDir["ImGui"] = "Amoeba/vendor/imgui"
+    IncludeDir["glm"] = "Amoeba/vendor/glm"
 
     include "Amoeba/vendor/GLFW"
     include "Amoeba/vendor/Glad"
@@ -38,6 +39,9 @@ project "Amoeba"
     {
         "%{prj.name}/src/**.h",
         "%{prj.name}/src/**.cpp",
+        "%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl",
     }
 
     includedirs
@@ -46,7 +50,8 @@ project "Amoeba"
         "%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links 
@@ -107,6 +112,7 @@ project "Sandbox"
     {
         "Amoeba/vendor/spdlog/include",
         "Amoeba/src"
+        "%{IncludeDir.glm}"
     }
 
     links
