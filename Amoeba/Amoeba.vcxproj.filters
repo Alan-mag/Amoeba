@@ -49,6 +49,9 @@
     <ClInclude Include="src\Amoeba\Input.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\KeyCodes.h">
+      <Filter>Amoeba</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Layer.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
@@ -56,6 +59,9 @@
       <Filter>Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Log.h">
+      <Filter>Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\MouseButtonCodes.h">
       <Filter>Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Window.h">

@@ -12,12 +12,18 @@ public:
 
 	void OnUpdate() override
 	{
-		AMOEBA_INFO("ExampleLayer::Update");
+		// AMOEBA_INFO("ExampleLayer::Update");
 	}
 
 	void OnEvent(Amoeba::Event& event) override
 	{
-		AMOEBA_TRACE("{0}", event);
+		if (event.GetEventType() == Amoeba::EventType::KeyPressed) 
+		{
+			Amoeba::KeyPressedEvent& e = (Amoeba::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == AMOEBA_KEY_TAB)
+				AMOEBA_TRACE("Tab key is pressed (event)!");
+			AMOEBA_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 
