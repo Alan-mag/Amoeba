@@ -111,7 +111,7 @@ project "Sandbox"
     includedirs
     {
         "Amoeba/vendor/spdlog/include",
-        "Amoeba/src"
+        "Amoeba/src",
         "%{IncludeDir.glm}"
     }
 
