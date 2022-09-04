@@ -6,6 +6,10 @@
 #include "Amoeba/Layer.h"
 #include "Amoeba/Log.h"
 
+#include "Amoeba/Input.h"
+#include "Amoeba/KeyCodes.h"
+#include "Amoeba/MouseButtonCodes.h"
+
 #include "Amoeba/ImGui/ImGuiLayer.h"
 
 #include <stdio.h>
