@@ -94,7 +94,7 @@
       <ImportLibrary>..\bin\Debug-windows-x86_64\Amoeba\Amoeba.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Debug-windows-x86_64\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Debug-windows-x86_64\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,7 +121,7 @@
       <ImportLibrary>..\bin\Release-windows-x86_64\Amoeba\Amoeba.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Release-windows-x86_64\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Release-windows-x86_64\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -148,7 +148,7 @@
       <ImportLibrary>..\bin\Dist-windows-x86_64\Amoeba\Amoeba.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Dist-windows-x86_64\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Amoeba\Amoeba.dll "..\bin\Dist-windows-x86_64\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -161,13 +161,15 @@
     <ClInclude Include="src\Amoeba\Events\KeyEvent.h" />
     <ClInclude Include="src\Amoeba\Events\MouseEvent.h" />
     <ClInclude Include="src\Amoeba\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Amoeba\Input.h" />
     <ClInclude Include="src\Amoeba\Layer.h" />
     <ClInclude Include="src\Amoeba\LayerStack.h" />
     <ClInclude Include="src\Amoeba\Log.h" />
     <ClInclude Include="src\Amoeba\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="src\Platform\WindowsWindow.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\amoebapch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -177,7 +179,8 @@
     <ClCompile Include="src\Amoeba\LayerStack.cpp" />
     <ClCompile Include="src\Amoeba\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
-    <ClCompile Include="src\Platform\WindowsWindow.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\amoebapch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
