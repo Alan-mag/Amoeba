@@ -1,5 +1,7 @@
 #include <Amoeba.h>
 
+#include "imgui/imgui.h"
+
 class ExampleLayer : public Amoeba::Layer 
 {
 public:
@@ -13,6 +15,13 @@ public:
 	void OnUpdate() override
 	{
 		// AMOEBA_INFO("ExampleLayer::Update");
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
 	}
 
 	void OnEvent(Amoeba::Event& event) override
@@ -32,7 +41,6 @@ class Sandbox : public Amoeba::Application {
 		Sandbox() 
 		{
 			PushLayer(new ExampleLayer());
-			PushOverlay(new Amoeba::ImGuiLayer());
 		}
 
 		~Sandbox() 

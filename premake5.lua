@@ -26,8 +26,10 @@ workspace "Amoeba"
 
 project "Amoeba"
     location "Amoeba"
-    kind "SharedLib"
+    kind "StaticLib"
     language "C++"
+    cppdialect "C++17"
+	staticruntime "on"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -43,6 +45,11 @@ project "Amoeba"
 		"%{prj.name}/vendor/glm/glm/**.hpp",
 		"%{prj.name}/vendor/glm/glm/**.inl",
     }
+
+    defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
+	}
 
     includedirs
     {
@@ -74,30 +81,27 @@ project "Amoeba"
             "GLFW_INCLUDE_NONE"
         }
 
-        postbuildcommands
-        {
-            ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
-        }
-
     filter "configurations:Debug"
 		defines "AMOEBA_DEBUG"
 		buildoptions "/MDd"
-		symbols "On"
+		symbols "on"
 
 	filter "configurations:Release"
 		defines "AMOEBA_RELEASE"
 		buildoptions "/MD"
-		optimize "On"
+		optimize "on"
 
 	filter "configurations:Dist"
 		defines "AMOEBA_DIST"
 		buildoptions "/MD"
-		optimize "On"
+		optimize "on"
 
 project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
     language "C++"
+    cppdialect "C++17"
+	staticruntime "on"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -112,6 +116,7 @@ project "Sandbox"
     {
         "Amoeba/vendor/spdlog/include",
         "Amoeba/src",
+        "Amoeba/vendor",
         "%{IncludeDir.glm}"
     }
 
@@ -133,14 +138,14 @@ project "Sandbox"
     filter "configurations:Debug"
         defines "AMOEBA_DEBUG"
         buildoptions "/MDd"
-        symbols "On"
+        symbols "on"
 
     filter "configurations:Release"
         defines "AMOEBA_RELEASE"
         buildoptions "/MD"
-        optimize "On"
+        optimize "on"
 
     filter "configurations:Dist"
         defines "AMOEBA_DIST"
         buildoptions "/MD"
-        optimize "On"
+        optimize "on"

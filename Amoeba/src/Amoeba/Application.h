@@ -7,6 +7,8 @@
 #include "Amoeba/Events/Event.h"
 #include "Amoeba/Events/ApplicationEvent.h"
 
+#include "Amoeba/ImGui/ImGuiLayer.h"
+
 namespace Amoeba {
 
 	class AMOEBA_API Application
@@ -29,6 +31,7 @@ namespace Amoeba {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:
