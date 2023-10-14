@@ -4,8 +4,9 @@
 #include "Amoeba/Events/ApplicationEvent.h"
 #include "Amoeba/Events/KeyEvent.h"
 #include "Amoeba/Events/MouseEvent.h"
-#include <glad/glad.h> // this should be imported from Application.cpp --> something is up here
 #include <GLFW/glfw3.h>
+
+#include "Platform/OpenGL/OpenGLContext.h"
 
 namespace Amoeba {
 	static bool s_GLFWInitialized = false;
@@ -49,9 +50,13 @@ namespace Amoeba {
 		}
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
-		glfwMakeContextCurrent(m_Window);
+		
+		m_Context = new OpenGLContext(m_Window);
+		m_Context->Init();
+
+		/*glfwMakeContextCurrent(m_Window);
 	    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		AMOEBA_ASSERT(status, "Failed to initialize Glad!");
+		AMOEBA_ASSERT(status, "Failed to initialize Glad!");*/
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
@@ -154,7 +159,7 @@ namespace Amoeba {
 	void WindowsWindow::OnUpdate()
 	{
 		glfwPollEvents();
-		glfwSwapBuffers(m_Window);
+		m_Context->SwapBuffers();
 	}
 
 	void WindowsWindow::SetVSync(bool enabled)
