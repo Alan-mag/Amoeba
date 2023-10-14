@@ -1,6 +1,9 @@
 #pragma once
 
 #include "Amoeba/Window.h"
+#include "Amoeba/Renderer/GraphicsContext.h"
+
+#include <GLFW/glfw3.h>
 
 struct GLFWwindow;
 
@@ -29,6 +32,7 @@ namespace Amoeba {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{
