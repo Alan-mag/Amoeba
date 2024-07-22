@@ -159,6 +159,7 @@
     <ClInclude Include="src\Amoeba\Log.h" />
     <ClInclude Include="src\Amoeba\MouseButtonCodes.h" />
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Amoeba\Renderer\Shader.h" />
     <ClInclude Include="src\Amoeba\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
@@ -587,6 +588,7 @@
     <ClCompile Include="src\Amoeba\Layer.cpp" />
     <ClCompile Include="src\Amoeba\LayerStack.cpp" />
     <ClCompile Include="src\Amoeba\Log.cpp" />
+    <ClCompile Include="src\Amoeba\Renderer\Shader.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
