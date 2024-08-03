@@ -93,11 +93,23 @@
     <ClInclude Include="src\Amoeba\MouseButtonCodes.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\Buffer.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\Renderer.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\Shader.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Window.h">
       <Filter>src\Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
       <Filter>src\Platform\OpenGL</Filter>
@@ -1375,6 +1387,18 @@
     </ClCompile>
     <ClCompile Include="src\Amoeba\Log.cpp">
       <Filter>src\Amoeba</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\Renderer.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\Shader.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
       <Filter>src\Platform\OpenGL</Filter>
