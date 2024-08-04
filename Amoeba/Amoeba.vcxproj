@@ -160,6 +160,7 @@
     <ClInclude Include="src\Amoeba\MouseButtonCodes.h" />
     <ClInclude Include="src\Amoeba\Renderer\Buffer.h" />
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Amoeba\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Amoeba\Renderer\Renderer.h" />
     <ClInclude Include="src\Amoeba\Renderer\RendererAPI.h" />
@@ -597,6 +598,7 @@
     <ClCompile Include="src\Amoeba\LayerStack.cpp" />
     <ClCompile Include="src\Amoeba\Log.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\RendererAPI.cpp" />

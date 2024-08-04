@@ -1383,6 +1383,9 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Amoeba\Application.cpp">
@@ -1441,6 +1444,9 @@
     </ClCompile>
     <ClCompile Include="src\amoebapch.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
