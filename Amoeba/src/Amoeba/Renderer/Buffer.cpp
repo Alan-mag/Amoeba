@@ -12,7 +12,7 @@ namespace Amoeba
 		switch (Renderer::GetAPI())
 		{
 			case RendererAPI::None: AMOEBA_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-			case RendererAPI::OpenGl: return new OpenGLVertexBuffer(vertices, size);
+			case RendererAPI::OpenGL: return new OpenGLVertexBuffer(vertices, size);
 		}
 
 		AMOEBA_CORE_ASSERT(false, "Unknown RendererAPI!")
@@ -24,7 +24,7 @@ namespace Amoeba
 		switch (Renderer::GetAPI())
 		{
 			case RendererAPI::None: AMOEBA_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-			case RendererAPI::OpenGl: return new OpenGLIndexBuffer(indices, size);
+			case RendererAPI::OpenGL: return new OpenGLIndexBuffer(indices, size);
 		}
 
 		AMOEBA_CORE_ASSERT(false, "Unknown RendererAPI!")
