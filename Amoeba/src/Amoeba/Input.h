@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Amoeba/Core.h"
-#include <utility>
 
 namespace Amoeba {
 

@@ -99,10 +99,19 @@
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\RenderCommand.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Renderer.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\RendererAPI.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Shader.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\VertexArray.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Window.h">
@@ -112,6 +121,12 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsInput.h">
@@ -1368,6 +1383,9 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Amoeba\Application.cpp">
@@ -1391,16 +1409,31 @@
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Renderer.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\RendererAPI.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Shader.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\VertexArray.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
@@ -1411,6 +1444,9 @@
     </ClCompile>
     <ClCompile Include="src\amoebapch.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
