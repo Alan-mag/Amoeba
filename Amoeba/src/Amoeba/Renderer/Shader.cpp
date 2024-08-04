@@ -129,4 +129,4 @@ namespace Amoeba
 		glUseProgram(0);
 	}
 
-}
+};
