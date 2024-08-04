@@ -18,7 +18,7 @@ namespace Amoeba {
 	{
 	public:
 		Application();
-		virtual ~Application();
+		virtual ~Application() = default;
 
 		void Run();
 
