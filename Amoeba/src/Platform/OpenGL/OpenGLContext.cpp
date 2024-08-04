@@ -28,5 +28,5 @@ namespace Amoeba {
 		glfwSwapBuffers(m_WindowHandle);
 	};
 
-}
+};
 

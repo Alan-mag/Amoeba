@@ -99,7 +99,13 @@
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\RenderCommand.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Renderer.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\RendererAPI.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Shader.h">
@@ -115,6 +121,9 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
@@ -1397,7 +1406,13 @@
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Renderer.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\RendererAPI.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Shader.cpp">
@@ -1410,6 +1425,9 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">

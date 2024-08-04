@@ -1,9 +1,7 @@
 #pragma once
 
-
 #include "Amoeba/Core.h"
 #include "Layer.h"
-
 #include <vector>
 
 namespace Amoeba
@@ -27,4 +25,5 @@ namespace Amoeba
 		std::vector<Layer*> m_Layers;
 		unsigned int m_LayerInsertIndex = 0;
 	};
+
 }

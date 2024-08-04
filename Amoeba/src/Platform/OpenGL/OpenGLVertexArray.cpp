@@ -9,17 +9,17 @@ namespace Amoeba {
 	{
 		switch (type)
 		{
-			case Amoeba::ShaderDataType::Float:    return GL_FLOAT;
-			case Amoeba::ShaderDataType::Float2:   return GL_FLOAT;
-			case Amoeba::ShaderDataType::Float3:   return GL_FLOAT;
-			case Amoeba::ShaderDataType::Float4:   return GL_FLOAT;
-			case Amoeba::ShaderDataType::Mat3:     return GL_FLOAT;
-			case Amoeba::ShaderDataType::Mat4:     return GL_FLOAT;
-			case Amoeba::ShaderDataType::Int:      return GL_INT;
-			case Amoeba::ShaderDataType::Int2:     return GL_INT;
-			case Amoeba::ShaderDataType::Int3:     return GL_INT;
-			case Amoeba::ShaderDataType::Int4:     return GL_INT;
-			case Amoeba::ShaderDataType::Bool:     return GL_BOOL;
+		case Amoeba::ShaderDataType::Float:    return GL_FLOAT;
+		case Amoeba::ShaderDataType::Float2:   return GL_FLOAT;
+		case Amoeba::ShaderDataType::Float3:   return GL_FLOAT;
+		case Amoeba::ShaderDataType::Float4:   return GL_FLOAT;
+		case Amoeba::ShaderDataType::Mat3:     return GL_FLOAT;
+		case Amoeba::ShaderDataType::Mat4:     return GL_FLOAT;
+		case Amoeba::ShaderDataType::Int:      return GL_INT;
+		case Amoeba::ShaderDataType::Int2:     return GL_INT;
+		case Amoeba::ShaderDataType::Int3:     return GL_INT;
+		case Amoeba::ShaderDataType::Int4:     return GL_INT;
+		case Amoeba::ShaderDataType::Bool:     return GL_BOOL;
 		}
 
 		AMOEBA_CORE_ASSERT(false, "Unknown ShaderDataType!");
@@ -78,4 +78,4 @@ namespace Amoeba {
 		m_IndexBuffer = indexBuffer;
 	}
 
-}
+};
