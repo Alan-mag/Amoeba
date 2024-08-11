@@ -46,6 +46,9 @@
     <Filter Include="vendor\glm\glm\gtx">
       <UniqueIdentifier>{B3A6A76B-9F8A-68C1-08EB-6214F4ED5243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Amoeba\Core">
+      <UniqueIdentifier>{6f6080c8-f1a0-4197-93df-300486830298}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Amoeba.h">
@@ -1385,6 +1388,9 @@
     </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
       <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Core\Timestamp.h">
+      <Filter>src\Amoeba\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
