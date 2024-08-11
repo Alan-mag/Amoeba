@@ -146,6 +146,7 @@
     <ClInclude Include="src\Amoeba.h" />
     <ClInclude Include="src\Amoeba\Application.h" />
     <ClInclude Include="src\Amoeba\Core.h" />
+    <ClInclude Include="src\Amoeba\Core\Timestamp.h" />
     <ClInclude Include="src\Amoeba\EntryPoint.h" />
     <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Amoeba\Events\Event.h" />
