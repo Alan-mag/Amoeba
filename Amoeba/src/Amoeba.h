@@ -5,7 +5,7 @@
 #include "Amoeba/Application.h"
 #include "Amoeba/Layer.h"
 #include "Amoeba/Log.h"
-#include "Amoeba/Core/Timestamp.h"
+#include "Amoeba/Core/Timestep.h"
 
 #include "Amoeba/Input.h"
 #include "Amoeba/KeyCodes.h"

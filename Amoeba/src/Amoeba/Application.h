@@ -7,11 +7,9 @@
 #include "Amoeba/Events/Event.h"
 #include "Amoeba/Events/ApplicationEvent.h"
 
+#include "Amoeba/Core/Timestep.h"
+
 #include "Amoeba/ImGui/ImGuiLayer.h"
-//#include "Amoeba/Renderer/Shader.h"
-//#include "Renderer/Buffer.h"
-//#include "Renderer/VertexArray.h"
-//#include "Renderer/OrthographicCamera.h"//
 
 namespace Amoeba {
 
@@ -31,6 +29,7 @@ namespace Amoeba {
 		inline Window& GetWindow() { return *m_Window; }
 
 		inline static Application& Get() { return *s_Instance; }
+
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 
@@ -41,13 +40,6 @@ namespace Amoeba {
 		LayerStack m_LayerStack;
 		float m_LastFrameTime = 0.0f;
 
-		/*std::shared_ptr<Shader> m_Shader;
-		std::shared_ptr<VertexArray> m_VertexArray;
-
-		std::shared_ptr<Shader> m_BlueShader;
-		std::shared_ptr<VertexArray> m_SquareVA;
-
-		OrthographicCamera m_Camera;*/
 	private:
 		static Application* s_Instance;
 	};
