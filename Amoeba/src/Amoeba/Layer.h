@@ -2,7 +2,7 @@
 
 #include "Amoeba/Core.h"
 #include "Amoeba/Events/Event.h"
-#include "Amoeba/Core/Timestamp.h"
+#include "Amoeba/Core/Timestep.h"
 
 namespace Amoeba
 {

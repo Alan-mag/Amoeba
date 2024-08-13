@@ -146,7 +146,7 @@
     <ClInclude Include="src\Amoeba.h" />
     <ClInclude Include="src\Amoeba\Application.h" />
     <ClInclude Include="src\Amoeba\Core.h" />
-    <ClInclude Include="src\Amoeba\Core\Timestamp.h" />
+    <ClInclude Include="src\Amoeba\Core\Timestep.h" />
     <ClInclude Include="src\Amoeba\EntryPoint.h" />
     <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Amoeba\Events\Event.h" />
@@ -171,6 +171,7 @@
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
@@ -608,6 +609,7 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />

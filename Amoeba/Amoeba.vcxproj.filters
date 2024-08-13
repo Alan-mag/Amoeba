@@ -1389,8 +1389,11 @@
     <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Core\Timestamp.h">
+    <ClInclude Include="src\Amoeba\Core\Timestep.h">
       <Filter>src\Amoeba\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1453,6 +1456,9 @@
     </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
