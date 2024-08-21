@@ -7,6 +7,9 @@
     <Filter Include="src\Amoeba">
       <UniqueIdentifier>{8136D004-6DEE-1152-D6F5-EAADC2CCAC42}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Amoeba\Core">
+      <UniqueIdentifier>{7993C4AD-E51E-3272-EE2F-B5665A3A8E72}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Amoeba\Events">
       <UniqueIdentifier>{45675936-B17D-57CC-FAF4-E2ED664A2854}</UniqueIdentifier>
     </Filter>
@@ -46,8 +49,8 @@
     <Filter Include="vendor\glm\glm\gtx">
       <UniqueIdentifier>{B3A6A76B-9F8A-68C1-08EB-6214F4ED5243}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Amoeba\Core">
-      <UniqueIdentifier>{6f6080c8-f1a0-4197-93df-300486830298}</UniqueIdentifier>
+    <Filter Include="vendor\stb_image">
+      <UniqueIdentifier>{0DA0BA59-F998-D9AB-22CB-BE300E23B9B7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="src\Amoeba\Core.h">
       <Filter>src\Amoeba</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Core\Timestep.h">
+      <Filter>src\Amoeba\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\EntryPoint.h">
       <Filter>src\Amoeba</Filter>
@@ -102,6 +108,9 @@
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\RenderCommand.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
@@ -112,6 +121,9 @@
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Shader.h">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amoeba\Renderer\Texture.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\VertexArray.h">
@@ -127,6 +139,12 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
@@ -1386,14 +1404,8 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h">
-      <Filter>src\Amoeba\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Amoeba\Core\Timestep.h">
-      <Filter>src\Amoeba\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="vendor\stb_image\stb_image.h">
+      <Filter>vendor\stb_image</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1418,6 +1430,9 @@
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
@@ -1428,6 +1443,9 @@
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Shader.cpp">
+      <Filter>src\Amoeba\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Amoeba\Renderer\Texture.cpp">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\VertexArray.cpp">
@@ -1442,6 +1460,12 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1454,11 +1478,8 @@
     <ClCompile Include="src\amoebapch.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp">
-      <Filter>src\Amoeba\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="vendor\stb_image\stb_image.cpp">
+      <Filter>vendor\stb_image</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

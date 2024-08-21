@@ -19,6 +19,7 @@
 
 #include "Amoeba/Renderer/Buffer.h"
 #include "Amoeba/Renderer/Shader.h"
+#include "Amoeba/Renderer/Texture.h"
 #include "Amoeba/Renderer/VertexArray.h"
 
 #include "Amoeba/Renderer/OrthographicCamera.h"
