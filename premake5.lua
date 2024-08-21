@@ -16,10 +16,12 @@ workspace "Amoeba"
     IncludeDir["Glad"] = "Amoeba/vendor/Glad/include"
     IncludeDir["ImGui"] = "Amoeba/vendor/imgui"
     IncludeDir["glm"] = "Amoeba/vendor/glm"
+    IncludeDir["stb_image"] = "Amoeba/vendor/stb_image"
 
-    include "Amoeba/vendor/GLFW"
-    include "Amoeba/vendor/Glad"
-    include "Amoeba/vendor/imgui"
+    group "Dependencies"
+        include "Amoeba/vendor/GLFW"
+        include "Amoeba/vendor/Glad"
+        include "Amoeba/vendor/imgui"
 
     -- startproject "Sandbox" todo: added in repo, but printing error onbuild?
 
@@ -42,6 +44,8 @@ project "Amoeba"
         "%{prj.name}/src/**.h",
         "%{prj.name}/src/**.cpp",
         "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/stb_image/**.h",
+		"%{prj.name}/vendor/stb_image/**.cpp",
 		"%{prj.name}/vendor/glm/glm/**.hpp",
 		"%{prj.name}/vendor/glm/glm/**.inl",
     }
@@ -57,8 +61,9 @@ project "Amoeba"
         "%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
+        "%{IncludeDir.glm}",
         "%{IncludeDir.ImGui}",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.stb_image}"
 	}
 
 	links 

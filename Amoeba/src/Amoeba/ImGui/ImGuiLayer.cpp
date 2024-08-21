@@ -1,9 +1,9 @@
 #include "amoebapch.h"
-#include "ImGuiLayer.h"
+#include "Amoeba/ImGui/ImGuiLayer.h"
 
-#include "imgui.h"
-#include "backends/imgui_impl_glfw.h"
-#include "backends/imgui_impl_opengl3.h"
+#include <../imguI/imgui.h>
+#include <../imgui/backends/imgui_impl_glfw.h>
+#include <../imgui/backends/imgui_impl_opengl3.h>
 
 #include "Amoeba/Application.h"
 // #include "backends/imgui_impl_opengl3_loader.h" // my addition
