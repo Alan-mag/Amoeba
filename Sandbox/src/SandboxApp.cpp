@@ -158,6 +158,7 @@ public:
 		m_TextureShader.reset(Amoeba::Shader::Create(textureShaderVertexSrc, textureShaderFragmentSrc));
 
 		m_Texture = Amoeba::Texture2D::Create("assets/textures/Checkerboard.png");
+		m_AmoebaLogoTexture = Amoeba::Texture2D::Create("assets/textures/Amoeba-Icon-256.png");
 
 		std::dynamic_pointer_cast<Amoeba::OpenGLShader>(m_TextureShader)->Bind();
 		std::dynamic_pointer_cast<Amoeba::OpenGLShader>(m_TextureShader)->UploadUniformInt("u_Texture", 0);
@@ -205,6 +206,8 @@ public:
 
 		m_Texture->Bind();
 		Amoeba::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+		m_AmoebaLogoTexture->Bind();
+		Amoeba::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 
 		// Triangle
 		// Amoeba::Renderer::Submit(m_Shader, m_VertexArray);
@@ -229,7 +232,7 @@ private:
 	Amoeba::Ref<Amoeba::Shader> m_FlatColorShader, m_TextureShader;
 	Amoeba::Ref<Amoeba::VertexArray> m_SquareVA;
 
-	Amoeba::Ref<Amoeba::Texture2D> m_Texture;
+	Amoeba::Ref<Amoeba::Texture2D> m_Texture, m_AmoebaLogoTexture;
 
 	Amoeba::OrthographicCamera m_Camera;
 	glm::vec3 m_CameraPosition;
