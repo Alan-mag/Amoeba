@@ -10,6 +10,7 @@
 #include "Amoeba/Input.h"
 #include "Amoeba/KeyCodes.h"
 #include "Amoeba/MouseButtonCodes.h"
+#include "Amoeba/OrthographicCameraController.h"
 
 #include "Amoeba/ImGui/ImGuiLayer.h"
 
