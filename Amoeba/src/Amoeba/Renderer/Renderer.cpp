@@ -12,6 +12,7 @@ namespace Amoeba
 		RenderCommand::Init();
 	}
 
+
 	void Renderer::BeginScene(OrthographicCamera& camera)
 	{
 		s_SceneData->ViewProjectionMatrix = camera.GetViewProjectionMatrix();

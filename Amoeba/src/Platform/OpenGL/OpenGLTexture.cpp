@@ -16,7 +16,7 @@ namespace Amoeba {
 		AMOEBA_CORE_ASSERT(data, "Failed to load image!");
 		m_Width = width;
 		m_Height = height;
-
+      
 		GLenum internalFormat = 0, dataFormat = 0;
 		if (channels == 4)
 		{
@@ -38,7 +38,6 @@ namespace Amoeba {
 		glTextureParameteri(m_RendererID, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
 		glTextureSubImage2D(m_RendererID, 0, 0, 0, m_Width, m_Height, dataFormat, GL_UNSIGNED_BYTE, data);
-
 		stbi_image_free(data);
 	}
 
