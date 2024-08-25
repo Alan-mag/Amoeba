@@ -15,6 +15,8 @@
 
 #include "Amoeba/Core/Log.h"
 
+#include "Amoeba/Debug/Instrumentor.h"
+
 #ifdef AMOEBA_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

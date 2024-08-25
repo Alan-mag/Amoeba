@@ -148,6 +148,7 @@
     <ClInclude Include="src\Amoeba\Core\Core.h" />
     <ClInclude Include="src\Amoeba\Core\Timestep.h" />
     <ClInclude Include="src\Amoeba\Core\EntryPoint.h" />
+    <ClInclude Include="src\Amoeba\Debug\Instrumentor.h" />
     <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Amoeba\Events\Event.h" />
     <ClInclude Include="src\Amoeba\Events\KeyEvent.h" />
