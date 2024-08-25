@@ -14,6 +14,8 @@ namespace Amoeba {
 
 	void OpenGLContext::Init()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		AMOEBA_ASSERT(status, "Failed to initialize Glad!");
@@ -25,6 +27,8 @@ namespace Amoeba {
 
 	void OpenGLContext::SwapBuffers()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		glfwSwapBuffers(m_WindowHandle);
 	};
 
