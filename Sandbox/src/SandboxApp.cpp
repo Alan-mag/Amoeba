@@ -3,13 +3,15 @@
 
 #include "Sandbox2D.h"
 #include "ExampleLayer.h"
+#include "GameLayer.h"
 
 class Sandbox : public Amoeba::Application
 {
 public:
 	Sandbox()
 	{
-		PushLayer(new Sandbox2D());
+		// PushLayer(new Sandbox2D());
+		PushLayer(new GameLayer());
 	}
 
 	~Sandbox()

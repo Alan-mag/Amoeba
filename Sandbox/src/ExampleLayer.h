@@ -22,7 +22,7 @@ private:
 	Amoeba::Ref<Amoeba::Shader> m_FlatColorShader;
 	Amoeba::Ref<Amoeba::VertexArray> m_SquareVA;
 
-	Amoeba::Ref<Amoeba::Texture2D> m_Texture, m_ChernoLogoTexture;
+	Amoeba::Ref<Amoeba::Texture2D> m_Texture, m_AmoebaLogoTexture;
 
 	Amoeba::OrthographicCameraController m_CameraController;
 	glm::vec3 m_SquareColor = { 0.2f, 0.3f, 0.8f };
