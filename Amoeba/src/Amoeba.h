@@ -15,6 +15,7 @@
 
 // ---Renderer------------------------
 #include "Amoeba/Renderer/Renderer.h"
+#include "Amoeba/Renderer/Renderer2D.h"
 #include "Amoeba/Renderer/RenderCommand.h"
 
 #include "Amoeba/Renderer/Buffer.h"

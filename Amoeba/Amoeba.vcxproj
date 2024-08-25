@@ -165,6 +165,7 @@
     <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Amoeba\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Amoeba\Renderer\Renderer.h" />
+    <ClInclude Include="src\Amoeba\Renderer\Renderer2D.h" />
     <ClInclude Include="src\Amoeba\Renderer\RendererAPI.h" />
     <ClInclude Include="src\Amoeba\Renderer\Shader.h" />
     <ClInclude Include="src\Amoeba\Renderer\Texture.h" />
@@ -608,6 +609,7 @@
     <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Amoeba\Renderer\Renderer2D.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\RendererAPI.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Shader.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Texture.cpp" />
