@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Amoeba/Layer.h"
+#include "Amoeba/Core/Layer.h"
 
 #include "Amoeba/Events/ApplicationEvent.h"
 #include <Amoeba/Events/MouseEvent.h>
@@ -16,7 +16,6 @@ namespace Amoeba {
 		
 		virtual void OnAttach() override;
 		virtual void OnDetach() override;
-		virtual void OnImGuiRender() override;
 
 		void Begin();
 		void End();

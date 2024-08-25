@@ -1,7 +1,7 @@
 #include "amoebapch.h"
 #include "WindowsInput.h"
 
-#include "Amoeba/Application.h"
+#include "Amoeba/Core/Application.h"
 #include <GLFW/glfw3.h>
 
 namespace Amoeba {

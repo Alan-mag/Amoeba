@@ -13,7 +13,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "Amoeba/Log.h"
+#include "Amoeba/Core/Log.h"
+
+#include "Amoeba/Debug/Instrumentor.h"
 
 #ifdef AMOEBA_PLATFORM_WINDOWS
 	#include <Windows.h>
