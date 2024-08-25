@@ -21,5 +21,7 @@ private:
 	Amoeba::Ref<Amoeba::VertexArray> m_SquareVA;
 	Amoeba::Ref<Amoeba::Shader> m_FlatColorShader;
 
+	Amoeba::Ref<Amoeba::Texture2D> m_CheckerboardTexture;
+
 	glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };
 };
