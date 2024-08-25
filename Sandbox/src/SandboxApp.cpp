@@ -1,8 +1,8 @@
 #include <Amoeba.h>
 #include <Amoeba/Core/EntryPoint.h>
 
-#include "Sandbox2D.h"
-#include "ExampleLayer.h"
+// #include "Sandbox2D.h"
+// #include "ExampleLayer.h"
 #include "GameLayer.h"
 
 class Sandbox : public Amoeba::Application
