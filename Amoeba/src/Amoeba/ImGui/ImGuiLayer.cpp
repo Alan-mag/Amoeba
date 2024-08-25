@@ -26,6 +26,8 @@ namespace Amoeba {
 
 	void ImGuiLayer::OnAttach()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		// Setup Dear ImGui context
 		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
@@ -59,6 +61,8 @@ namespace Amoeba {
 
 	void ImGuiLayer::OnDetach()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		ImGui_ImplOpenGL3_Shutdown();
 		ImGui_ImplGlfw_Shutdown();
 		ImGui::DestroyContext();
@@ -66,6 +70,8 @@ namespace Amoeba {
 
 	void ImGuiLayer::Begin()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
@@ -73,6 +79,8 @@ namespace Amoeba {
 
 	void ImGuiLayer::End()
 	{
+		AMOEBA_PROFILE_FUNCTION();
+
 		ImGuiIO& io = ImGui::GetIO();
 		Application& app = Application::Get();
 		io.DisplaySize = ImVec2((float)app.GetWindow().GetWidth(), (float)app.GetWindow().GetHeight());

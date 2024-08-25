@@ -605,6 +605,7 @@
     <ClCompile Include="src\Amoeba\Core\Layer.cpp" />
     <ClCompile Include="src\Amoeba\Core\LayerStack.cpp" />
     <ClCompile Include="src\Amoeba\Core\Log.cpp" />
+    <ClCompile Include="src\Amoeba\Renderer\GraphicsContext.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\OrthographicCameraController.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp" />
