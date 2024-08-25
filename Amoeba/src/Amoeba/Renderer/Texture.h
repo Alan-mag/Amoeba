@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "Amoeba/Core.h"
+#include "Amoeba/Core/Core.h"
 
 namespace Amoeba {
 

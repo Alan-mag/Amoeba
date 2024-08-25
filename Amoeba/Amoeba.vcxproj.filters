@@ -57,16 +57,16 @@
     <ClInclude Include="src\Amoeba.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Application.h">
+    <ClInclude Include="src\Amoeba\Core\Application.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Core.h">
+    <ClInclude Include="src\Amoeba\Core\Core.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Core\Timestep.h">
       <Filter>src\Amoeba\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\EntryPoint.h">
+    <ClInclude Include="src\Amoeba\Core\EntryPoint.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h">
@@ -84,25 +84,25 @@
     <ClInclude Include="src\Amoeba\ImGui\ImGuiLayer.h">
       <Filter>src\Amoeba\ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Input.h">
+    <ClInclude Include="src\Amoeba\Core\Input.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\KeyCodes.h">
+    <ClInclude Include="src\Amoeba\Core\KeyCodes.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Layer.h">
+    <ClInclude Include="src\Amoeba\Core\Layer.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\LayerStack.h">
+    <ClInclude Include="src\Amoeba\Core\LayerStack.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Log.h">
+    <ClInclude Include="src\Amoeba\Core\Log.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\MouseButtonCodes.h">
+    <ClInclude Include="src\Amoeba\Core\MouseButtonCodes.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\OrthographicCameraController.h">
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCameraController.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Amoeba\Renderer\Buffer.h">
@@ -132,7 +132,7 @@
     <ClInclude Include="src\Amoeba\Renderer\VertexArray.h">
       <Filter>src\Amoeba\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Amoeba\Window.h">
+    <ClInclude Include="src\Amoeba\Core\Window.h">
       <Filter>src\Amoeba</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
@@ -1412,7 +1412,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Amoeba\Application.cpp">
+    <ClCompile Include="src\Amoeba\Core\Application.cpp">
       <Filter>src\Amoeba</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\ImGui\ImGuiBuild.cpp">
@@ -1421,16 +1421,16 @@
     <ClCompile Include="src\Amoeba\ImGui\ImGuiLayer.cpp">
       <Filter>src\Amoeba\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="src\Amoeba\Layer.cpp">
+    <ClCompile Include="src\Amoeba\Core\Layer.cpp">
       <Filter>src\Amoeba</Filter>
     </ClCompile>
-    <ClCompile Include="src\Amoeba\LayerStack.cpp">
+    <ClCompile Include="src\Amoeba\Core\LayerStack.cpp">
       <Filter>src\Amoeba</Filter>
     </ClCompile>
-    <ClCompile Include="src\Amoeba\Log.cpp">
+    <ClCompile Include="src\Amoeba\Core\Log.cpp">
       <Filter>src\Amoeba</Filter>
     </ClCompile>
-    <ClCompile Include="src\Amoeba\OrthographicCameraController.cpp">
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCameraController.cpp">
       <Filter>src\Amoeba</Filter>
     </ClCompile>
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp">

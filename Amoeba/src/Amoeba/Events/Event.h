@@ -1,7 +1,7 @@
 #pragma once
 
 #include "amoebapch.h"
-#include "Amoeba/Core.h"
+#include "Amoeba/Core/Core.h"
 
 namespace Amoeba {
 	// Events in Amoeba are currently blocking, meaning when an event occurs it

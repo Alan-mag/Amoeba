@@ -1,7 +1,7 @@
 #include "amoebapch.h"
 #include "Application.h"
 
-#include "Amoeba/Log.h"
+#include "Log.h"
 
 #include "Amoeba/Renderer/Renderer.h"
 

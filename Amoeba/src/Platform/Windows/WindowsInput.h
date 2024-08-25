@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Amoeba/Input.h"
+#include "Amoeba/Core/Input.h"
 
 namespace Amoeba {
 

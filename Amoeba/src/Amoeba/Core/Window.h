@@ -2,7 +2,7 @@
 
 #include "amoebapch.h"
 
-#include "Amoeba/Core.h"
+#include "Amoeba/Core/Core.h"
 #include "Amoeba/Events/Event.h"
 
 namespace Amoeba {

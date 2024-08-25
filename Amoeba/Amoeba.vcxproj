@@ -144,22 +144,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Amoeba.h" />
-    <ClInclude Include="src\Amoeba\Application.h" />
-    <ClInclude Include="src\Amoeba\Core.h" />
+    <ClInclude Include="src\Amoeba\Core\Application.h" />
+    <ClInclude Include="src\Amoeba\Core\Core.h" />
     <ClInclude Include="src\Amoeba\Core\Timestep.h" />
-    <ClInclude Include="src\Amoeba\EntryPoint.h" />
+    <ClInclude Include="src\Amoeba\Core\EntryPoint.h" />
     <ClInclude Include="src\Amoeba\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Amoeba\Events\Event.h" />
     <ClInclude Include="src\Amoeba\Events\KeyEvent.h" />
     <ClInclude Include="src\Amoeba\Events\MouseEvent.h" />
     <ClInclude Include="src\Amoeba\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="src\Amoeba\Input.h" />
-    <ClInclude Include="src\Amoeba\KeyCodes.h" />
-    <ClInclude Include="src\Amoeba\Layer.h" />
-    <ClInclude Include="src\Amoeba\LayerStack.h" />
-    <ClInclude Include="src\Amoeba\Log.h" />
-    <ClInclude Include="src\Amoeba\MouseButtonCodes.h" />
-    <ClInclude Include="src\Amoeba\OrthographicCameraController.h" />
+    <ClInclude Include="src\Amoeba\Core\Input.h" />
+    <ClInclude Include="src\Amoeba\Core\KeyCodes.h" />
+    <ClInclude Include="src\Amoeba\Core\Layer.h" />
+    <ClInclude Include="src\Amoeba\Core\LayerStack.h" />
+    <ClInclude Include="src\Amoeba\Core\Log.h" />
+    <ClInclude Include="src\Amoeba\Core\MouseButtonCodes.h" />
+    <ClInclude Include="src\Amoeba\Renderer\OrthographicCameraController.h" />
     <ClInclude Include="src\Amoeba\Renderer\Buffer.h" />
     <ClInclude Include="src\Amoeba\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Amoeba\Renderer\OrthographicCamera.h" />
@@ -169,7 +169,7 @@
     <ClInclude Include="src\Amoeba\Renderer\Shader.h" />
     <ClInclude Include="src\Amoeba\Renderer\Texture.h" />
     <ClInclude Include="src\Amoeba\Renderer\VertexArray.h" />
-    <ClInclude Include="src\Amoeba\Window.h" />
+    <ClInclude Include="src\Amoeba\Core\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
@@ -597,13 +597,13 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Amoeba\Application.cpp" />
+    <ClCompile Include="src\Amoeba\Core\Application.cpp" />
     <ClCompile Include="src\Amoeba\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Amoeba\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\Amoeba\Layer.cpp" />
-    <ClCompile Include="src\Amoeba\LayerStack.cpp" />
-    <ClCompile Include="src\Amoeba\Log.cpp" />
-    <ClCompile Include="src\Amoeba\OrthographicCameraController.cpp" />
+    <ClCompile Include="src\Amoeba\Core\Layer.cpp" />
+    <ClCompile Include="src\Amoeba\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Amoeba\Core\Log.cpp" />
+    <ClCompile Include="src\Amoeba\Renderer\OrthographicCameraController.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Amoeba\Renderer\RenderCommand.cpp" />
