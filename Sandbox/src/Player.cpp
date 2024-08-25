@@ -30,7 +30,9 @@ Player::Player()
 
 void Player::LoadAssets()
 {
-	m_ShipTexture = Amoeba::Texture2D::Create("assets/textures/VampireBat.png");
+	m_PlayerTexture =  Texture2D::Create("assets/textures/VampireBat.png");
+	// my attempt at drawing player
+	// Renderer2D::DrawQuad({ m_Position.x,  m_Position.y }, { 10.0f, 10.0f }, { 255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1.0f });
 }
 
 void Player::OnUpdate(Amoeba::Timestep ts)
@@ -73,7 +75,7 @@ void Player::OnUpdate(Amoeba::Timestep ts)
 void Player::OnRender()
 {
 	m_ParticleSystem.OnRender();
-	Renderer2D::DrawQuad({ m_Position.x, m_Position.y, 0.5f }, { 1.0f, 1.3f }, glm::radians(GetRotation()), m_ShipTexture);
+	Renderer2D::DrawQuad({ m_Position.x, m_Position.y, 0.5f }, { 1.0f, 1.3f }, glm::radians(GetRotation()), m_PlayerTexture);
 }
 
 void Player::OnImGuiRender()

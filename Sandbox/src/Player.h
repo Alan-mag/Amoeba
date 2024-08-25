@@ -39,5 +39,5 @@ private:
 	ParticleProps m_SmokeParticle, m_EngineParticle;
 	ParticleSystem m_ParticleSystem;
 
-	Amoeba::Ref<Amoeba::Texture2D> m_ShipTexture;
+	Amoeba::Ref<Amoeba::Texture2D> m_PlayerTexture;
 };
