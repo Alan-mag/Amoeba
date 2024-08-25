@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Amoeba/Window.h"
+#include "Amoeba/Core/Window.h"
 #include "Amoeba/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>

@@ -3,7 +3,7 @@
 #include "Core.h"
 
 #include "Window.h"
-#include "Amoeba/LayerStack.h"
+#include "Amoeba/Core/LayerStack.h"
 #include "Amoeba/Events/Event.h"
 #include "Amoeba/Events/ApplicationEvent.h"
 

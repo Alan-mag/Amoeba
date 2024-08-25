@@ -5,7 +5,7 @@
 #include <../imgui/backends/imgui_impl_glfw.h>
 #include <../imgui/backends/imgui_impl_opengl3.h>
 
-#include "Amoeba/Application.h"
+#include "Amoeba/Core/Application.h"
 // #include "backends/imgui_impl_opengl3_loader.h" // my addition
 // #include "Platform/OpenGL/ImGuiOpenGLRenderer.h"
 

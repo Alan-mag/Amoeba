@@ -1,8 +1,8 @@
 #include "amoebapch.h"
 #include "OrthographicCameraController.h"
 
-#include "Amoeba/Input.h"
-#include "Amoeba/KeyCodes.h"
+#include "Amoeba/Core/Input.h"
+#include "Amoeba/Core/KeyCodes.h"
 
 namespace Amoeba {
 

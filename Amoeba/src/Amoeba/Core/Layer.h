@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Amoeba/Core.h"
+#include "Amoeba/Core/Core.h"
 #include "Amoeba/Events/Event.h"
 #include "Amoeba/Core/Timestep.h"
 
