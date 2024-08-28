@@ -30,7 +30,7 @@ Player::Player()
 
 void Player::LoadAssets()
 {
-	m_PlayerTexture =  Texture2D::Create("assets/textures/VampireBat.png");
+	m_PlayerTexture =  Texture2D::Create("../assets/textures/VampireBat.png");
 	// my attempt at drawing player
 	// Renderer2D::DrawQuad({ m_Position.x,  m_Position.y }, { 10.0f, 10.0f }, { 255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1.0f });
 }
