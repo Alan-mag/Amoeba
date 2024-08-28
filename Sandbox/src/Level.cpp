@@ -66,12 +66,12 @@ static bool PointInTri(const glm::vec2& p, glm::vec2& p0, const glm::vec2& p1, c
 
 void Level::Init()
 {
-	m_TriangleTexture = Amoeba::Texture2D::Create("../assets/textures/Triangle.png");
+	m_TriangleTexture = Texture2D::Create("../assets/textures/Triangle.png");
 	m_Player.LoadAssets();
 
 	m_Pillars.resize(5);
 	for (int i = 0; i < 5; i++)
-		CreatePillar(i, i * 10.0f);
+		CreatePillar(i, i * 3000.0f);
 }
 
 void Level::OnUpdate(Amoeba::Timestep ts)
