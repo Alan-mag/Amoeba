@@ -122,7 +122,7 @@ ExampleLayer::ExampleLayer()
 	auto textureShader = m_ShaderLibrary.Load("assets/shaders/Texture.glsl");
 
 	m_Texture = Amoeba::Texture2D::Create("assets/textures/Checkerboard.png");
-	m_ChernoLogoTexture = Amoeba::Texture2D::Create("assets/textures/ChernoLogo.png");
+	m_AmoebaLogoTexture = Amoeba::Texture2D::Create("assets/textures/Amoeba-Icon-256.png");
 
 	textureShader->Bind();
 	textureShader->SetInt("u_Texture", 0);
@@ -166,7 +166,7 @@ void ExampleLayer::OnUpdate(Amoeba::Timestep ts)
 
 	m_Texture->Bind();
 	Amoeba::Renderer::Submit(textureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
-	m_ChernoLogoTexture->Bind();
+	m_AmoebaLogoTexture->Bind();
 	Amoeba::Renderer::Submit(textureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
 
 	// Triangle
